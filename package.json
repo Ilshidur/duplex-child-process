@@ -1,7 +1,7 @@
 {
   "name": "duplex-child-process-issue-13",
   "description": "Fixes the issue #13 of the 'duplex-child-process' package.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Ilshidur",
     "email": "ilshidur@gmail.com"
