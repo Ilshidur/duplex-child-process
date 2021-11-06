@@ -1,21 +1,19 @@
 {
-  "name": "duplex-child-process",
-  "description": "Spawn a child process as a duplex stream",
+  "name": "duplex-child-process-issue-13",
+  "description": "Fixes the issue #13 of the 'duplex-child-process' package.",
   "version": "1.0.1",
   "author": {
-    "name": "Jonathan Ong",
-    "email": "me@jongleberry.com",
-    "url": "http://jongleberry.com",
-    "twitter": "https://twitter.com/jongleberry"
+    "name": "Ilshidur",
+    "email": "ilshidur@gmail.com"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stream-utils/duplex-child-process.git"
+    "url": "https://github.com/Ilshidur/duplex-child-process.git"
   },
   "bugs": {
-    "mail": "me@jongleberry.com",
-    "url": "https://github.com/stream-utils/duplex-child-process/issues"
+    "mail": "ilshidur@gmail.com",
+    "url": "https://github.com/Ilshidur/duplex-child-process/issues"
   },
   "devDependencies": {
     "mocha": "*",

@@ -1,43 +1,8 @@
-# Duplex Child Process [![Build Status](https://travis-ci.org/stream-utils/duplex-child-process.png)](https://travis-ci.org/stream-utils/duplex-child-process)
+# Duplex Child Process
 
-Spawn a child process as a duplex stream.
+**This repo is a fork and fixes this lib by applying [this change](https://github.com/stream-utils/duplex-child-process/issues/13#issuecomment-793644303). Shout out to @aalexgabi for the fix. This is a quick workaround to fix this lib until the upstream lib gets fixed.**
 
-```js
-var Child_Process = require('duplex-child-process')
-
-var toJPEG = Child_Process.spawn('convert', ['-', 'JPEG:-'])
-var getFormat = Child_Process.spawn('identify', ['-format', '%m', '-'])
-
-fs.createReadStream('img.png')
-.pipe(toJPEG)
-.pipe(getFormat)
-.once('readable', function () {
-  var format = this.read().toString('utf8')
-  assert.equal(format, 'JPEG')
-})
-```
-
-## API
-
-### Child_Process.spawn(command, [args], [options])
-
-Convenience wrapper for:
-
-```js
-new Child_Process().spawn(command, [args], [options])
-```
-
-### new Child_Process(options)
-
-Creates a new duplex child process instance.
-Does not spawn a new child process yet.
-This is separated from `.spawn()` because you may want to use this in your own constructor.
-
-
-### proc.spawn(command, [args], [options])
-
-This actually spawns the child process.
-In your own app, execute this once you've gotten all your arguments.
+Please refer to the original repo : https://github.com/stream-utils/duplex-child-process.
 
 ## License
 
